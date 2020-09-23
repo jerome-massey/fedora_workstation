@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo apt install ansible
+sudo dnf install ansible -y
 ansible-playbook ./post_install.yml -K
