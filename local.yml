@@ -7,7 +7,7 @@
     - visual-studio-code
     - update
 
-  tasks:
+  tasks:  
     # - name: Install neofetch
     #   become: yes
     #   package:
