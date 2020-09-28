@@ -14,27 +14,16 @@
         name: 
           - neofetch
           - neovim
+          - kate
+          - python3-pip
         state: present
-    # - name: Install neovim
-    #   become: yes
-    #   package:
-    #     name: neovim
-    #     state: present
-    # - name: Install pip
-    #   become: yes
-    #   package:
-    #     name: python3-pip
-    #     state: present
-    # - name: Install Kate
-    #   become: yes
-    #   package:
-    #     name: kate
-    #     state: present
-    # - name: Install git
-    #   become: yes
-    #   package:
-    #     name: git
-    #     state: present
+    - name: Install Jupyter Lab
+      pip:
+        name: 
+          - jupyterlab
+          - requests>2.22
+          - ncclient
+        extra_args: --user
     # - name: Creating install directories
     #   become: no
     #   command: mkdir $HOME/Documents/init_setup/{theme10d,theme10l,icon}  -p
@@ -56,16 +45,4 @@
     # - name: Set Plasma Theme
     #   become: no
     #   command: lookandfeeltool --apply com.github.yeyushengfan258.We10XOS
-    # - name: Install Jupyter Lab
-    #   pip:
-    #     name: jupyterlab
-    #     extra_args: --user
-    # - name: Install requests
-    #   become: yes
-    #   pip:
-    #     name: requests>2.22
-    #     extra_args: --user
-    # - name: Install ncclient
-    #   pip:
-    #     name: ncclient
-    #     extra_args: --user
+
