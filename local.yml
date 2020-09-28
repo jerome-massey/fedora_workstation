@@ -23,7 +23,7 @@
           - jupyterlab
           - requests>2.22
           - ncclient
-        extra_args: --user
+        # extra_args: --user
     # - name: Creating install directories
     #   become: no
     #   command: mkdir $HOME/Documents/init_setup/{theme10d,theme10l,icon}  -p
