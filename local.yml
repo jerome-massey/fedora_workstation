@@ -8,11 +8,13 @@
     - robertdebock.update
 
   tasks:  
-    # - name: Install neofetch
-    #   become: yes
-    #   package:
-    #     name: neofetch
-    #     state: present
+    - name: Install packages
+      become: yes
+      package:
+        name: 
+          - neofetch
+          - neovim
+        state: present
     # - name: Install neovim
     #   become: yes
     #   package:
