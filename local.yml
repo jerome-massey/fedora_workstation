@@ -5,7 +5,7 @@
 
   roles:
     - visual-studio-code
-    - robertdebock.update
+    - role: robertdebock.update
 
   tasks:  
     # - name: Install neofetch
