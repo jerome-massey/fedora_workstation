@@ -1,8 +1,8 @@
 ---
 # tasks file for visual-studio-code
-- name: install dependencies (dnf)
+- name: install dependencies (package)
   become: yes
-  dnf:
+  package:
     name:
       - libX11-xcb
       - which
@@ -18,8 +18,8 @@
     gpgkey: '{{ visual_studio_code_mirror }}/keys/microsoft.asc'
     gpgcheck: yes
 
-- name: install VS Code (dnf)
+- name: install VS Code (package)
   become: yes
-  dnf:
+  package:
     name: "{{ visual_studio_code_package }}{{ (visual_studio_code_version | length > 0) | ternary('-' + visual_studio_code_version, '') }}"
     state: present

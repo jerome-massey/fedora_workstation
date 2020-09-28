@@ -7,22 +7,6 @@
     - visual-studio-code
 
   tasks:
-    # - name: Add VS Code Repo Key
-    #   become: yes
-    #   command: rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    # - name: Add Repo
-    #   become: yes
-    #   command: sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-    # - name: Upgrade all packages
-    #   become: yes
-    #   dnf:
-    #     name: "*"
-    #     state: latest
-    # - name: Install Visual Studio Code
-    #   become: yes
-    #   package:
-    #     name: code-insiders
-    #     state: present
     # - name: Install neofetch
     #   become: yes
     #   package:
